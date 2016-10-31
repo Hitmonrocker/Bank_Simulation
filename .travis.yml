@@ -1,0 +1,13 @@
+language: generic
+os: linux
+env: CXX=g++-5
+addons:
+  apt:
+    packages:
+      - g++-5
+    sources:
+      - ubuntu-toolchain-r-test
+script: 
+ - g++-5 -o main Pm_Main.cpp Pmp.cpp
+ - g++-5 -o Test TestModuleTotal.cpp
+ - ./Test 
