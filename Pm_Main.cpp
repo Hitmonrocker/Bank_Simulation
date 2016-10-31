@@ -35,7 +35,7 @@ void Simulation(int Tellercount,int ppm, int intialServiceTime)
  			else
  			{
  					std::cout<<std::endl;//spacing
- 					addCustomersToBank(B,B.getTime(),counter,service,ppm);//calls function to add customers to queue
+ 					addCustomersToBank(B,B.getTime(),counter,intialServiceTime,ppm);//calls function to add customers to queue
  			}
  	}
 	B.advanceTime();//Advances time 
