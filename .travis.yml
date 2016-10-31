@@ -8,6 +8,6 @@ addons:
     sources:
       - ubuntu-toolchain-r-test
 script: 
- - g++-5 -o main Pm_Main.cpp Pmp.cpp
+ - g++-5 -o main Pm_Main.cpp
  - g++-5 -o Test TestModuleTotal.cpp
  - ./Test 
